@@ -1,0 +1,36 @@
+{
+  "name": "@segmsh/android-xml",
+  "repository": "segmsh/android-xml",
+  "license": "Apache-2.0",
+  "author": "Segm.sh",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "tsc",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "@segmsh/core": "^0.2.0"
+  },
+  "dependencies": {
+    "xast-util-from-xml": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/xast": "^2.0.4",
+    "eol": "^0.10.0",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.4"
+  }
+}

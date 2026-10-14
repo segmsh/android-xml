@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Escapes -->
+    <string name="apostrophe">Don\'t stop</string>
+    <string name="quotes">Say \"hello\"</string>
+    <string name="newline">First line\nSecond line</string>
+    <string name="tab">Name:\tValue</string>
+    <string name="backslash">C:\\Users</string>
+    <string name="unicode">\u00a1Hola!</string>
+    <string name="at">\@not_a_reference</string>
+    <string name="question">\?not_an_attribute</string>
+    <string name="entities">Save &amp; Restore &lt;state&gt;</string>
+
+    <!-- Whitespace -->
+    <string name="wrapped">
+        This text is wrapped
+        over several lines.
+    </string>
+    <string name="quoted">"  Keep   these   spaces  "</string>
+    <string name="quoted_apostrophe">"It's fine inside quotes"</string>
+    <string name="escaped_spaces">\u0020Padded\u0020</string>
+
+    <!-- Markup -->
+    <string name="bold">Hello <b>world</b>!</string>
+    <string name="font">Pick <font color="#ff0000" face="sans-serif">red</font> now</string>
+    <string name="placeholder">Hello <xliff:g id="name" example="Bob">%1$s</xliff:g>!</string>
+    <string name="cdata"><![CDATA[<h1>Hello world!</h1>]]></string>
+
+    <!-- Not translatable -->
+    <string name="app_id" translatable="false">com.example.app</string>
+    <string name="reference">@string/bold</string>
+    <string name="empty"></string>
+    <string name="blank">   </string>
+    <string name="self_closing"/>
+    <plurals name="hidden" translatable="false">
+        <item quantity="one">Hidden</item>
+    </plurals>
+
+    <!-- Collections -->
+    <plurals name="cats">
+        <item quantity="one">%d cat</item>
+        <item quantity="other">%d cats</item>
+    </plurals>
+    <string-array name="choices" tools:ignore="MissingTranslation">
+        <item>Always</item>
+        <item>@string/bold</item>
+        <item>Never</item>
+    </string-array>
+
+    <!-- Not strings -->
+    <dimen name="margin">16dp</dimen>
+    <color name="red">#ff0000</color>
+    <integer name="count">3</integer>
+
+    <!-- Variants -->
+    <string name="variant" product="phone">Phone</string>
+    <string name="variant" product="tablet">Tablet</string>
+</resources>

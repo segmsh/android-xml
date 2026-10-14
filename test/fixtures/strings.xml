@@ -1,0 +1,16 @@
+<resources>
+    <string name="simple_string">Hello world!</string>
+    <string name="string_with_placeholders">Hello %s!</string>
+    <string name="string_w" formatted="false">%s jobs in %s days</string>
+    <string name="string_with_html_formatting">Hello <b>world</b>!</string>
+    <string name="string_with_other_html"><![CDATA[<h1>Hello world!</h1>]]></string>
+    <plurals name="plural_string">
+        <item quantity="one">%s cat</item>
+        <item quantity="other">%s cats</item>
+    </plurals>
+    <string-array name="array_of_strings">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+</resources>

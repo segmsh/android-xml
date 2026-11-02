@@ -27,7 +27,7 @@
     "xast-util-from-xml": "^4.0.0"
   },
   "devDependencies": {
-    "@types/node": "^26.6.5",
+    "@types/node": "^26.6.6",
     "@types/xast": "^2.0.4",
     "eol": "^0.10.0",
     "typescript": "^7.0.2",
